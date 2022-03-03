@@ -1,0 +1,31 @@
+{% extends 'layout.html' %} {% block content %}
+
+<div class="jumbotron text-monospace text-center">
+  <h3>What is this?</h3>
+  <p class="lead text-center">
+  A monitoring system to provide healthcare industries a monitoring system which will ensure
+  the safety of their employee,</br> management, customer and product. Our system will
+  detect the person who will be violating the PPE ISOs provided by the</br> higher
+  management.It will be a vision-based object detection which will work on CCTV
+  footage.
+  </p>
+</div>
+
+<div class="form-box">
+  <form method="POST" enctype="multipart/form-data" action="">
+    <div class="mb-3">
+      <label for="url" class="form-label">URL for video</label>
+      <input type="text" name="url" class="form-control" />
+      <div class="form-text">Make sure the URL ends with .mp4</div>
+    </div>
+    <h4 class="text-center">OR</h4>
+    <div class="mb-3">
+      <label for="video" class="form-label">Upload video</label>
+      <input type="file" name="video" class="form-control" />
+      <div class="form-text">Upload a video from local storage</div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+{% endblock content %}

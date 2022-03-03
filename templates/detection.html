@@ -1,0 +1,30 @@
+{% extends 'layout.html' %} {% block content %}
+<div style="margin-bottom: 0.5cm">
+  <center>
+    <img
+      src="{{ url_for('video_feed') }}"
+      class="rounded"
+      width="70"
+      height="70"
+    />
+  </center>
+</div>
+
+
+
+<center>
+  <a
+    class="btn btn-secondary"
+    href="{{ url_for('main') }}"
+    style="margin-right: 10px"
+    >Go Home</a>
+  <a class="btn btn-secondary" 
+  href="{{ url_for('.report') }}" onClick="alert('Report is generated!')"
+  >Generate PDF Report</a>
+  <a class="btn btn-secondary" 
+  href="{{ url_for('.email') }}" onClick="alert('Email has been sent!')"
+  >Send to Mail</a>
+
+</center>
+
+{% endblock content %}

@@ -15,7 +15,8 @@ The model is trained using YOLOv4
 
 # To Run The Code
 
-Run -? conda activate yolov4-gpu
+Run -> conda activate yolov4-gpu
+
 Run -> python app.py
 
 Model Checkpoint Link: Email on shaheerakber67@gmail.com
